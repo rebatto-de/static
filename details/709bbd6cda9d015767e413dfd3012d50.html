@@ -6,9 +6,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JSON-LD to RDFa Conversion</title>
-  <meta name="description" content="" />
-  <link rel="icon" href="" />
+  <title>Rebatto - Lokale Highlights in Schweinfurt</title>
+  <meta name="description" content="Entdecken Sie Angebote, Events und mehr in Schweinfurt." />
+  <link rel="icon" href="/favicon.ico" />
   
   <link rel="stylesheet" href="../assets/index.css" />
   <link rel="stylesheet" href="../assets/all.min.css" />
@@ -23,7 +23,7 @@
         
         <div class="flex items-center space-x-4">
           <a class="flex items-center" href="home.html">
-            <img src="" alt=" Logo" class="h-8" />
+            <img src="https://rebatto.de/lovable-uploads/b6f841cc-aa63-4c19-9588-b3161154b6e2.png" alt="Rebatto Logo" class="h-8" />
           </a>
 
           
@@ -49,6 +49,18 @@
         
         <nav class="hidden md:flex items-center space-x-8">
           
+          <a class="text-gray-700 hover:text-primary transition-colors" href="home.html">
+            Highlights
+          </a>
+          
+          <a class="text-gray-700 hover:text-primary transition-colors" href="customers.html">
+            Für Kunden
+          </a>
+          
+          <a class="text-gray-700 hover:text-primary transition-colors" href="merchants.html">
+            Für Händler
+          </a>
+          
         </nav>
 
         
@@ -60,7 +72,26 @@
   </header>
 
   
-    <div vocab="https://schema.org/" typeof="http://schema.org/Offer" class="rdfa-entity">
+    <div vocab="https://schema.org/" typeof="http://schema.org/Place" class="rdfa-entity">
+  <div class="entity-type">http://schema.org/Place</div>
+  <span property="http://schema.org/address" class="rdfa-property" title="http://schema.org/address">_:b2</span>
+  <span property="http://schema.org/name" class="rdfa-property" title="http://schema.org/name">WÖHRL</span>
+  <span property="http://schema.org/telephone" class="rdfa-property" title="http://schema.org/telephone">09721 675260</span>
+</div>
+<div vocab="https://schema.org/" typeof="http://schema.org/Product" class="rdfa-entity">
+  <div class="entity-type">http://schema.org/Product</div>
+  <span property="http://schema.org/description" class="rdfa-property" title="http://schema.org/description"></span>
+  <a property="http://schema.org/image" href="https://vxslzoqpvzcsoqwnfioz.supabase.co/storage/v1/object/public/highlight-images/originals/1754643920169.jpg" class="rdfa-link" title="http://schema.org/image" target="_blank">https://vxslzoqpvzcsoqwnfioz.supabase.co/storage/v1/object/public/highlight-images/originals/1754643920169.jpg</a>
+  <span property="http://schema.org/name" class="rdfa-property" title="http://schema.org/name"></span>
+</div>
+<div vocab="https://schema.org/" typeof="http://schema.org/PostalAddress" class="rdfa-entity">
+  <div class="entity-type">http://schema.org/PostalAddress</div>
+  <span property="http://schema.org/addressCountry" class="rdfa-property" title="http://schema.org/addressCountry">DE</span>
+  <span property="http://schema.org/addressLocality" class="rdfa-property" title="http://schema.org/addressLocality">Schweinfurt</span>
+  <span property="http://schema.org/postalCode" class="rdfa-property" title="http://schema.org/postalCode">97421</span>
+  <span property="http://schema.org/streetAddress" class="rdfa-property" title="http://schema.org/streetAddress">Spitalstraße 12-16</span>
+</div>
+<div vocab="https://schema.org/" typeof="http://schema.org/Offer" class="rdfa-entity">
   <div class="entity-type">http://schema.org/Offer</div>
   <a property="http://schema.org/availability" href="https://schema.org/InStock" class="rdfa-link" title="http://schema.org/availability" target="_blank">https://schema.org/InStock</a>
   <span property="http://schema.org/description" class="rdfa-property" title="http://schema.org/description"></span>
@@ -72,30 +103,11 @@
   <span property="http://schema.org/validFrom" class="rdfa-property" title="http://schema.org/validFrom">2025-07-23T00:00:00Z</span>
   <span property="http://schema.org/validThrough" class="rdfa-property" title="http://schema.org/validThrough">2025-08-16T00:00:00Z</span>
 </div>
-<div vocab="https://schema.org/" typeof="http://schema.org/Product" class="rdfa-entity">
-  <div class="entity-type">http://schema.org/Product</div>
-  <span property="http://schema.org/description" class="rdfa-property" title="http://schema.org/description"></span>
-  <a property="http://schema.org/image" href="https://vxslzoqpvzcsoqwnfioz.supabase.co/storage/v1/object/public/highlight-images/originals/1754643920169.jpg" class="rdfa-link" title="http://schema.org/image" target="_blank">https://vxslzoqpvzcsoqwnfioz.supabase.co/storage/v1/object/public/highlight-images/originals/1754643920169.jpg</a>
-  <span property="http://schema.org/name" class="rdfa-property" title="http://schema.org/name"></span>
-</div>
 <div vocab="https://schema.org/" typeof="http://schema.org/PriceSpecification" class="rdfa-entity">
   <div class="entity-type">http://schema.org/PriceSpecification</div>
   <span property="http://schema.org/price" class="rdfa-property" title="http://schema.org/price"></span>
   <span property="http://schema.org/priceCurrency" class="rdfa-property" title="http://schema.org/priceCurrency">EUR</span>
   <span property="http://schema.org/priceType" class="rdfa-property" title="http://schema.org/priceType">Monatlich</span>
-</div>
-<div vocab="https://schema.org/" typeof="http://schema.org/Place" class="rdfa-entity">
-  <div class="entity-type">http://schema.org/Place</div>
-  <span property="http://schema.org/address" class="rdfa-property" title="http://schema.org/address">_:b2</span>
-  <span property="http://schema.org/name" class="rdfa-property" title="http://schema.org/name">WÖHRL</span>
-  <span property="http://schema.org/telephone" class="rdfa-property" title="http://schema.org/telephone">09721 675260</span>
-</div>
-<div vocab="https://schema.org/" typeof="http://schema.org/PostalAddress" class="rdfa-entity">
-  <div class="entity-type">http://schema.org/PostalAddress</div>
-  <span property="http://schema.org/addressCountry" class="rdfa-property" title="http://schema.org/addressCountry">DE</span>
-  <span property="http://schema.org/addressLocality" class="rdfa-property" title="http://schema.org/addressLocality">Schweinfurt</span>
-  <span property="http://schema.org/postalCode" class="rdfa-property" title="http://schema.org/postalCode">97421</span>
-  <span property="http://schema.org/streetAddress" class="rdfa-property" title="http://schema.org/streetAddress">Spitalstraße 12-16</span>
 </div>
 <div vocab="https://schema.org/" typeof="http://schema.org/Organization" class="rdfa-entity">
   <div class="entity-type">http://schema.org/Organization</div>
@@ -132,36 +144,102 @@ auch online unter woehrl.de mit dem Code
           <div class="flex items-center space-x-2">
             <a href="home.html">
               <div class="bg-primary text-primary-foreground px-3 py-1 rounded-lg font-bold text-lg">
-                
+                Rebatto
               </div>
             </a>
           </div>
-          <p class="text-gray-300 text-sm"></p>
+          <p class="text-gray-300 text-sm">Ihre zentrale Plattform für lokale Highlights in Schweinfurt. Entdecken Sie Angebote, Events und mehr!</p>
           <div class="flex space-x-4">
+            
+            <a href="https://www.facebook.com/RebattoSchweinfurt" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-primary transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-facebook w-5 h-5">
+                &lt;path d=&#34;M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z&#34;&gt;&lt;/path&gt;
+              </svg>
+            </a>
+            
+            <a href="https://www.instagram.com/rebattode/" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-primary transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-instagram w-5 h-5">
+                &lt;rect width=&#34;20&#34; height=&#34;20&#34; x=&#34;2&#34; y=&#34;2&#34; rx=&#34;5&#34; ry=&#34;5&#34;&gt;&lt;/rect&gt;&lt;path d=&#34;M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z&#34;&gt;&lt;/path&gt;
+              </svg>
+            </a>
+            
+            <a href="https://x.com/RebattoDE" target="_blank" rel="noopener noreferrer"
+              class="text-gray-400 hover:text-primary transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-twitter w-5 h-5">
+                &lt;path d=&#34;M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6...&#34;&gt;&lt;/path&gt;
+              </svg>
+            </a>
             
           </div>
         </div>
 
         
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold"></h3>
+          <h3 class="text-lg font-semibold">Quick Links</h3>
           <ul class="space-y-2 text-sm">
+            
+            <li><a href="about.html" class="text-gray-300 hover:text-primary transition-colors">Über Rebatto</a></li>
+            
+            <li><a href="customers.html" class="text-gray-300 hover:text-primary transition-colors">Für Kunden</a></li>
+            
+            <li><a href="merchants.html" class="text-gray-300 hover:text-primary transition-colors">Für Händler</a></li>
             
           </ul>
         </div>
 
         
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold"></h3>
+          <h3 class="text-lg font-semibold">Rechtliches</h3>
           <ul class="space-y-2 text-sm">
+            
+            <li><a href="imprint.html" class="text-gray-300 hover:text-primary transition-colors">Impressum</a></li>
+            
+            <li><a href="privacy.html" class="text-gray-300 hover:text-primary transition-colors">Datenschutz</a></li>
+            
+            <li><a href="terms.html" class="text-gray-300 hover:text-primary transition-colors">AGB</a></li>
             
           </ul>
         </div>
 
         
         <div class="space-y-4">
-          <h3 class="text-lg font-semibold"></h3>
+          <h3 class="text-lg font-semibold">Kontakt</h3>
           <div class="space-y-3 text-sm">
+            
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-mail w-4 h-4 text-primary">
+                &lt;rect width=&#34;20&#34; height=&#34;16&#34; x=&#34;2&#34; y=&#34;4&#34; rx=&#34;2&#34;&gt;&lt;/rect&gt;&lt;path d=&#34;m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7&#34;&gt;&lt;/path&gt;
+              </svg>
+              <span class="text-gray-300">info@rebatto.de</span>
+            </div>
+            
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-phone w-4 h-4 text-primary">
+                &lt;path d=&#34;M22 16.92v3a2 2 0 0 1-2.18 2...&#34;&gt;&lt;/path&gt;
+              </svg>
+              <span class="text-gray-300">&#43;49 152 240 86 290</span>
+            </div>
+            
+            <div class="flex items-center space-x-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="lucide lucide-map-pin w-4 h-4 text-primary">
+                &lt;path d=&#34;M20 10c0 4.993-5.539 10.193...&#34;&gt;&lt;/path&gt;&lt;circle cx=&#34;12&#34; cy=&#34;10&#34; r=&#34;3&#34;&gt;&lt;/circle&gt;
+              </svg>
+              <span class="text-gray-300">Schweinfurt, Deutschland</span>
+            </div>
             
           </div>
         </div>
@@ -169,7 +247,7 @@ auch online unter woehrl.de mit dem Code
 
       
       <div class="border-t border-gray-800 mt-8 pt-8 text-center text-sm text-gray-400">
-        <p></p>
+        <p>© 2025 Rebatto. Alle Rechte vorbehalten.</p>
       </div>
     </div>
   </footer>
