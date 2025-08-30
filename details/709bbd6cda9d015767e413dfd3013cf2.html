@@ -12,102 +12,73 @@
   
   <link rel="stylesheet" href="../assets/index.css" />
   <link rel="stylesheet" href="../assets/all.min.css" />
+  <link rel="stylesheet" href="../assets/mobile.css" />
 </head>
 
 <body class="bg-background text-foreground min-h-screen flex flex-col">
 
   
   <header class="bg-white shadow-sm sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="h-16 flex items-center justify-between">
-
-        
-        <div class="flex items-center space-x-4">
-          <a class="flex items-center" href="../home.html">
-            <img src="https://rebatto.de/lovable-uploads/b6f841cc-aa63-4c19-9588-b3161154b6e2.png" alt="Rebatto Logo" class="h-8" />
-          </a>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="h-16 flex items-center justify-between relative">
+                
+                <div class="flex items-center space-x-4">
+                    <a class="flex items-center" href="../home.html">
+                        <img src="https://rebatto.de/lovable-uploads/b6f841cc-aa63-4c19-9588-b3161154b6e2.png" alt="Rebatto Logo" class="h-8" />
+                    </a>
+                </div>
+                
+                
+                <nav class="desktop-nav hidden md:flex items-center space-x-8">
+                    
+                    <a class="text-gray-700 hover:text-primary transition-colors" href="../home.html">
+                        Highlights
+                    </a>
+                    
+                    <a class="text-gray-700 hover:text-primary transition-colors" href="../customers.html">
+                        Für Kunden
+                    </a>
+                    
+                    <a class="text-gray-700 hover:text-primary transition-colors" href="../merchants.html">
+                        Für Händler
+                    </a>
+                    
+                </nav>
+                
+                
+                <div class="flex items-center space-x-4">
+                    
+                    <div class="mobile-menu-container md:hidden relative">
+                        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                        <label for="menu-toggle" class="menu-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </label>
+                        
+                        
+                        <div class="mobile-menu">
+                            
+                            <a href="../home.html">Highlights</a>
+                            
+                            <a href="../customers.html">Für Kunden</a>
+                            
+                            <a href="../merchants.html">Für Händler</a>
+                            
+                        </div>
+                        
+                        
+                        <label for="menu-toggle" class="menu-overlay"></label>
+                    </div>
+                    
+                    
+                    <div class="hidden md:block">
+                        
+                    </div>
+                </div>
+            </div>
         </div>
-
-        
-        <nav class="hidden md:flex items-center space-x-8">
-          
-          <a class="text-gray-700 hover:text-primary transition-colors" href="../home.html">
-            Highlights
-          </a>
-          
-          <a class="text-gray-700 hover:text-primary transition-colors" href="../customers.html">
-            Für Kunden
-          </a>
-          
-          <a class="text-gray-700 hover:text-primary transition-colors" href="../merchants.html">
-            Für Händler
-          </a>
-          
-        </nav>
-
-        
-        <div class="md:hidden">
-          
-          <input type="checkbox" id="menu-toggle" class="peer hidden" />
-
-          
-          <label for="menu-toggle" class="p-2 rounded-md border border-gray-300 hover:bg-gray-100 cursor-pointer">
-            
-            <svg class="h-6 w-6 text-gray-600 peer-checked:hidden" xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-            </svg>
-            
-            <svg class="h-6 w-6 text-gray-600 hidden peer-checked:block" xmlns="http://www.w3.org/2000/svg" fill="none"
-              viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-            </svg>
-          </label>
-        </div>
-      </div>
-    </div>
-
-    
-    <div class="md:hidden max-h-0 overflow-hidden peer-checked:max-h-96 transition-all duration-300"
-        id="mobile-menu-container">
-      <nav class="px-4 py-4 space-y-2 bg-white border-t border-gray-200">
-        
-        <a class="block text-gray-700 hover:text-primary transition-colors" href="../home.html">
-          Highlights
-        </a>
-        
-        <a class="block text-gray-700 hover:text-primary transition-colors" href="../customers.html">
-          Für Kunden
-        </a>
-        
-        <a class="block text-gray-700 hover:text-primary transition-colors" href="../merchants.html">
-          Für Händler
-        </a>
-        
-      </nav>
-    </div>
-  </header>
-
-
-    
-    <div class="md:hidden bg-white border-t border-gray-200" x-show="mobileMenuOpen" x-transition>
-      <nav class="px-4 py-4 space-y-2">
-        
-        <a class="block text-gray-700 hover:text-primary transition-colors" href="../home.html">
-          Highlights
-        </a>
-        
-        <a class="block text-gray-700 hover:text-primary transition-colors" href="../customers.html">
-          Für Kunden
-        </a>
-        
-        <a class="block text-gray-700 hover:text-primary transition-colors" href="../merchants.html">
-          Für Händler
-        </a>
-        
-      </nav>
-    </div>
-  </header>
+    </header>
 
   
   
